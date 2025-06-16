@@ -18,17 +18,21 @@ A modern command-line tool for encrypting and decrypting text using the Caesar c
    ```bash
    git clone https://github.com/your-repo-url.git
    cd your-repo-folder
-
-2. Activate venv
+   
+2. Activate venv:
+  ```bash
    python3 -m venv venv
 source venv/bin/activate  # On Linux/macOS
-venv\Scripts\activate     # On Windows
+venv\Scripts\activate     # on Windows 
 
-### *** install requirements  ***
+
+3. Install requirements:
+  ```bash
 pip install -r requirements.txt
 
 
-### *** encrypt ***
+4. encrypt :
+ ```bash
 python caesar_cipher.py encrypt
 
 
