@@ -1,58 +1,41 @@
-# Caesar Cipher CLI
-
+Caesar Cipher CLI
 A modern command-line tool for encrypting and decrypting text using the Caesar cipher algorithm.
-
-## Features
-
+Features
 - Encrypt and decrypt text using the Caesar cipher
-- Beautiful CLI interface with rich text formatting
-- Support for both uppercase and lowercase letters
+- Clean and intuitive CLI interface
+- Supports both uppercase and lowercase letters
 - Preserves non-alphabetic characters
-- Interactive prompts for input
+- Interactive prompts for user-friendly input
+  
+Installation
+Using a Virtual Environment (Recommended)
+- Clone the repository:
+- 
+git clone https://github.com/your-repo-url.git
+cd your-repo-folder
 
-## Installation
+- Create and activate a virtual environment:
+python3 -m venv venv
+source venv/bin/activate  # On Linux/macOS
+venv\Scripts\activate     # On Windows
 
-1. Clone this repository
-2. Install the required dependencies:
-```bash
+- Install dependencies:
 pip install -r requirements.txt
-```
 
-## Usage
 
-### Encrypt Text
-```bash
+Usage
+Encrypt Text
 python caesar_cipher.py encrypt
-```
+
+
 or with options:
-```bash
 python caesar_cipher.py encrypt --text "Hello World" --shift 3
-```
 
-### Decrypt Text
-```bash
-python caesar_cipher.py decrypt
-```
-or with options:
-```bash
-python caesar_cipher.py decrypt --text "Khoor Zruog" --shift 3
-```
+
+Deactivate Virtual Environment
+To exit the virtual environment after use, simply run:
+deactivate
 
-### Get Help
-```bash
-python caesar_cipher.py --help
-```
 
-## Example
 
-Encrypting "Hello World" with a shift of 3:
-```bash
-python caesar_cipher.py encrypt --text "Hello World" --shift 3
-```
-Output: "Khoor Zruog"
 
-Decrypting "Khoor Zruog" with a shift of 3:
-```bash
-python caesar_cipher.py decrypt --text "Khoor Zruog" --shift 3
-```
-Output: "Hello World" 
